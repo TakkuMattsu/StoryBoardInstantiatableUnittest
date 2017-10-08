@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# 本当はfastlane使ってるけど今回はなし
+xcodebuild test -scheme StoryBoardInstantiatableUnitTestTests -destination 'platform=iOS Simulator,name=iPhone 6'
