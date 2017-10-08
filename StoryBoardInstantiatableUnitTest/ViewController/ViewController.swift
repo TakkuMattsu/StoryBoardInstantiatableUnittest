@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  StoryBoardInstantiatableUnitTest
 //
-//  Created by t_matsumura on 2017/10/08.
+//  Created by TakkuMattsu on 2017/10/08.
 //  Copyright © 2017年 TakkuMattsu. All rights reserved.
 //
 

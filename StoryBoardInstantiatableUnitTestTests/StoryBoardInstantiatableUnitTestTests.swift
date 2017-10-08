@@ -2,14 +2,14 @@
 //  StoryBoardInstantiatableUnitTestTests.swift
 //  StoryBoardInstantiatableUnitTestTests
 //
-//  Created by t_matsumura on 2017/10/08.
+//  Created by TakkuMattsu on 2017/10/08.
 //  Copyright © 2017年 TakkuMattsu. All rights reserved.
 //
 
 import XCTest
 @testable import StoryBoardInstantiatableUnitTest
 
-class StoryBoardInstantiatableUnitTestTests: XCTestCase {
+class UIViewController+StoryboardTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
