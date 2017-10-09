@@ -21,42 +21,6 @@ class UIViewController_StoryboardTests: XCTestCase {
         super.tearDown()
     }
     func test_ストーリボートからViewController作成() {
-        /// ViewControllerのファイル名取得
-        ///
-        /// - Parameters:
-        ///   - fileName: ファイル名
-        ///   - dirPath: ディレクトリパス
-        func getAllFile(fileName: String?, dirPath: String) -> [String] {
-            do {
-                let files = try FileManager.default.contentsOfDirectory(atPath: dirPath)
-                // TODO: ☠️この辺もっと上手く書けるはず...これはひどい
-                // swiftファイルの配列作成
-                let names: [String] = files.filter({ (file) -> Bool in
-                    return file.hasSuffix(".swift")
-                })
-                // swiftファイルを含まないもの=ディレクトリ
-                let notFiles: [String] = files.filter({ (file) -> Bool in
-                    return !file.hasSuffix(".swift")
-                })
-                // ディレクトリの場合は再帰的にファイル名を取得
-                let otherfiles: [String] = notFiles.map({ (file) -> [String] in
-                    let path: String = {
-                        guard let fileName = fileName else {
-                            return dirPath
-                        }
-                        return "\(dirPath)/\(fileName)"
-                    }()
-                    return getAllFile(fileName: file, dirPath: path)
-                }).flatMap({ (strs) -> [String] in
-                    return strs
-                })
-                // ファイル名の配列を結合
-                return names + otherfiles
-            } catch {
-                XCTFail()
-                fatalError("\(error.localizedDescription)")
-            }
-        }
         // info.plistにViewControllerが置いてる場所のパスがあるのでそれを取得
         guard let infolist: [String : Any] = Bundle(for: UIViewController_StoryboardTests.self).infoDictionary, let vcPath =  infolist["Source Directory"] as? String else {
             XCTFail()
@@ -67,7 +31,7 @@ class UIViewController_StoryboardTests: XCTestCase {
             ViewController.className          // 起動Storyboardと結びついているので除外
         ]
         /// テスト
-        let files = getAllFile(fileName: nil, dirPath: vcPath)
+        let files = viewControllerFileNames(atPath: vcPath)
         print("ViewController数:\(files.count) うち除外:\(excludeList.count)")
         let testList = files.filter { (file) -> Bool in
             // 除外リスト
@@ -91,5 +55,37 @@ class UIViewController_StoryboardTests: XCTestCase {
         excludeList.forEach { (file) in
             print("- \(file)")
         }
+    }
+}
+
+private extension UIViewController_StoryboardTests {
+    
+    /// 指定ディレクトリ内の「ViewController.swift」が含まれているファイル名を取得
+    ///
+    /// - Parameter dirPath: ディレクトリパス
+    /// - Returns: 「ViewController.swift」が含まれているファイル名の配列
+    func viewControllerFileNames(atPath dirPath: String) -> [String] {
+        
+        var vcFileNames = [String]()
+        var isDir: ObjCBool = false
+        let vcSuffix = "ViewController.swift"
+        let fileExists = FileManager.default.fileExists(atPath: dirPath, isDirectory: &isDir)
+        
+        if !fileExists {
+            XCTFail("dirPath does not exist.")
+        }
+        if !isDir.boolValue {
+            XCTFail("dirPath is not a directory.")
+        }
+        
+        if let paths = FileManager.default.enumerator(atPath: dirPath) {
+            while let path = paths.nextObject() as? String {
+                if path.hasSuffix(vcSuffix) {
+                    let fileName = (path as NSString).lastPathComponent
+                    vcFileNames.append(fileName)
+                }
+            }
+        }
+        return vcFileNames
     }
 }
