@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/TakkuMattsu/StoryBoardInstantiatableUnittest.svg?branch=master)](https://travis-ci.org/TakkuMattsu/StoryBoardInstantiatableUnittest)
 # 概要
 
 StoryboardのViewControllerを生成するExtensionのテストを書くのサンプルコードになります。
