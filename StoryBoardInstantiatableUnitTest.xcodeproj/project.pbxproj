@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		864E64C11F8BF04A0018EB60 /* AoiChangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864E64BD1F8BF04A0018EB60 /* AoiChangViewController.swift */; };
+		864E64C21F8BF04A0018EB60 /* HinataChangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864E64BE1F8BF04A0018EB60 /* HinataChangViewController.swift */; };
+		864E64C31F8BF04A0018EB60 /* KaedeSanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864E64BF1F8BF04A0018EB60 /* KaedeSanViewController.swift */; };
+		864E64C41F8BF04A0018EB60 /* KokonaChangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864E64C01F8BF04A0018EB60 /* KokonaChangViewController.swift */; };
 		86D4133D1F8A5F700040C6ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4133C1F8A5F700040C6ED /* AppDelegate.swift */; };
 		86D413441F8A5F700040C6ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86D413431F8A5F700040C6ED /* Assets.xcassets */; };
 		86D413521F8A5F700040C6ED /* UIViewController+StoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D413511F8A5F700040C6ED /* UIViewController+StoryboardTests.swift */; };
@@ -19,10 +23,6 @@
 		86D413A11F8A64690040C6ED /* KokonaChangViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D413981F8A64690040C6ED /* KokonaChangViewController.storyboard */; };
 		86D413A21F8A64690040C6ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D4139A1F8A64690040C6ED /* LaunchScreen.storyboard */; };
 		86D413A31F8A64690040C6ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D4139C1F8A64690040C6ED /* Main.storyboard */; };
-		86D413A81F8A64760040C6ED /* HinataChangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D413A41F8A64760040C6ED /* HinataChangViewController.swift */; };
-		86D413A91F8A64760040C6ED /* KaedeSanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D413A51F8A64760040C6ED /* KaedeSanViewController.swift */; };
-		86D413AA1F8A64760040C6ED /* AoiChangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D413A61F8A64760040C6ED /* AoiChangViewController.swift */; };
-		86D413AB1F8A64760040C6ED /* KokonaChangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D413A71F8A64760040C6ED /* KokonaChangViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		864E64BD1F8BF04A0018EB60 /* AoiChangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AoiChangViewController.swift; sourceTree = "<group>"; };
+		864E64BE1F8BF04A0018EB60 /* HinataChangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HinataChangViewController.swift; sourceTree = "<group>"; };
+		864E64BF1F8BF04A0018EB60 /* KaedeSanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaedeSanViewController.swift; sourceTree = "<group>"; };
+		864E64C01F8BF04A0018EB60 /* KokonaChangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KokonaChangViewController.swift; sourceTree = "<group>"; };
 		86D413391F8A5F700040C6ED /* StoryBoardInstantiatableUnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryBoardInstantiatableUnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D4133C1F8A5F700040C6ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86D413431F8A5F700040C6ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,10 +56,6 @@
 		86D413991F8A64690040C6ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KokonaChangViewController.storyboard; sourceTree = "<group>"; };
 		86D4139B1F8A64690040C6ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86D4139D1F8A64690040C6ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
-		86D413A41F8A64760040C6ED /* HinataChangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HinataChangViewController.swift; sourceTree = "<group>"; };
-		86D413A51F8A64760040C6ED /* KaedeSanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaedeSanViewController.swift; sourceTree = "<group>"; };
-		86D413A61F8A64760040C6ED /* AoiChangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AoiChangViewController.swift; sourceTree = "<group>"; };
-		86D413A71F8A64760040C6ED /* KokonaChangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KokonaChangViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +76,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		864E64BC1F8BF04A0018EB60 /* Yamanosusume */ = {
+			isa = PBXGroup;
+			children = (
+				864E64BD1F8BF04A0018EB60 /* AoiChangViewController.swift */,
+				864E64BE1F8BF04A0018EB60 /* HinataChangViewController.swift */,
+				864E64BF1F8BF04A0018EB60 /* KaedeSanViewController.swift */,
+				864E64C01F8BF04A0018EB60 /* KokonaChangViewController.swift */,
+			);
+			path = Yamanosusume;
+			sourceTree = "<group>";
+		};
 		86D413301F8A5F700040C6ED = {
 			isa = PBXGroup;
 			children = (
@@ -119,11 +130,8 @@
 		86D4135C1F8A60800040C6ED /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				86D413A61F8A64760040C6ED /* AoiChangViewController.swift */,
-				86D413A41F8A64760040C6ED /* HinataChangViewController.swift */,
-				86D413A51F8A64760040C6ED /* KaedeSanViewController.swift */,
-				86D413A71F8A64760040C6ED /* KokonaChangViewController.swift */,
 				86D4135D1F8A60800040C6ED /* ViewController.swift */,
+				864E64BC1F8BF04A0018EB60 /* Yamanosusume */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -265,13 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86D413A91F8A64760040C6ED /* KaedeSanViewController.swift in Sources */,
+				864E64C31F8BF04A0018EB60 /* KaedeSanViewController.swift in Sources */,
 				86D4135E1F8A60810040C6ED /* ViewController.swift in Sources */,
-				86D413AA1F8A64760040C6ED /* AoiChangViewController.swift in Sources */,
 				86D4138F1F8A63F00040C6ED /* NSObject+ClassName.swift in Sources */,
-				86D413A81F8A64760040C6ED /* HinataChangViewController.swift in Sources */,
-				86D413AB1F8A64760040C6ED /* KokonaChangViewController.swift in Sources */,
 				86D4133D1F8A5F700040C6ED /* AppDelegate.swift in Sources */,
+				864E64C21F8BF04A0018EB60 /* HinataChangViewController.swift in Sources */,
+				864E64C41F8BF04A0018EB60 /* KokonaChangViewController.swift in Sources */,
+				864E64C11F8BF04A0018EB60 /* AoiChangViewController.swift in Sources */,
 				86D413901F8A63F00040C6ED /* UIViewController+Storyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
